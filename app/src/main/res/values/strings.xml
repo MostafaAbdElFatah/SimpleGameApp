@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">app</string>
+    <string name="question1">What the Capital of Egypt ?</string>
+    <string name="question2">Select Country and its Capital ?</string>
+    <string name="question3">What the Capital of Canada ?</string>
+    <string name="question4">What the Capital of Australia ?</string>
+</resources>

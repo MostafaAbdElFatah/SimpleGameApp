@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/text"
+                    android:text="@string/question1" />
+                <EditText
+                    android:id="@+id/question_1_Answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:hint="the Answer"
+                    android:layout_margin="20dp"
+                    android:inputType="text" />
+                <Button
+                    android:id="@+id/submitButton1"
+                    style="@style/btn"
+                    android:text="Submit"
+                    android:layout_gravity="right"
+                    android:onClick="submitQuestion1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/question2LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/question2"
+                    style="@style/text"
+                    android:text="@string/question2" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="50dp">
+                    <CheckBox
+                        android:id="@+id/question_2_answer1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text=" Malaysia" />
+                    <CheckBox
+                        android:id="@+id/question_2_answer2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text=" Japan" />
+                    <CheckBox
+                        android:id="@+id/question_2_answer3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text=" Kuala Lumpur" />
+                    <CheckBox
+                        android:id="@+id/question_2_answer4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text=" Tirane" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/submitButton2"
+                    style="@style/btn"
+                    android:text="Submit"
+                    android:layout_gravity="right"
+                    android:onClick="submitQuestion2"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/question3LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/text"
+                    android:text="@string/question3" />
+                <RadioGroup
+                    android:id="@+id/question_3_answers"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp">
+                    <RadioButton
+                        android:id="@+id/question_3_answer1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Moroni" />
+
+                    <RadioButton
+                        android:id="@+id/question_3_answer2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ottawa" />
+
+                    <RadioButton
+                        android:id="@+id/question_3_answer3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Berlin" />
+                </RadioGroup>
+                <Button
+                    android:id="@+id/submitButton3"
+                    style="@style/btn"
+                    android:text="Submit"
+                    android:layout_gravity="right"
+                    android:onClick="submitQuestion3"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/question4LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/text"
+                    android:text="@string/question4" />
+                <RadioGroup
+                    android:id="@+id/question_4_answers"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp">
+                    <RadioButton
+                        android:id="@+id/question_4_answer1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Canberra" />
+
+                    <RadioButton
+                        android:id="@+id/question_4_answer2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Abu Dhabi" />
+
+                    <RadioButton
+                        android:id="@+id/question_4_answer3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ashgabat" />
+                </RadioGroup>
+                <Button
+                android:id="@+id/submitButton4"
+                style="@style/btn"
+                android:text="Submit"
+                    android:layout_gravity="right"
+                android:onClick="submitQuestion4"/>
+            </LinearLayout>
+            <Button
+                style="@style/btn"
+                android:text="grading"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:onClick="displayGrading"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
